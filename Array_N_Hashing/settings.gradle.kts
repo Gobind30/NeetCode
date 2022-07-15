@@ -1,1 +1,0 @@
-rootProject.name = "Array_N_Hashing"
