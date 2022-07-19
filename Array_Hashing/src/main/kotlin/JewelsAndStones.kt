@@ -2,10 +2,11 @@ class JewelsAndStones {
 
     fun numJewelsInStones(jewels: String, stones: String): Int {
 
-        var count = 0
-        for (s in jewels) {
-             count += stones.count { (it == s) }
+        var num = 0
+        var jewelsSet = jewels.toSet()
+        for(s in stones) {
+            if (jewelsSet.contains(s)) ++num
         }
-        return count
+        return num
     }
 }
