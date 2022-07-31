@@ -1,7 +1,20 @@
+import sorting_algo.BubbleSort
+import sorting_algo.InsertionSort
+import sorting_algo.SelectionSort
+import kotlin.random.Random
+import kotlin.random.nextInt
+
 fun main(args: Array<String>) {
 
-    val count = JewelsAndStones().numJewelsInStones("aAA", "aAAbbbb")
+    var intArray: IntArray = IntArray(10) {
+        Random.nextInt(1, 100)
+    }
+    intArray.forEach (::println)
 
-    println(count)
+    println("SORTED ARRAY")
+
+    InsertionSort().sort(intArray)
+
+    intArray.forEach (::println)
 
 }
