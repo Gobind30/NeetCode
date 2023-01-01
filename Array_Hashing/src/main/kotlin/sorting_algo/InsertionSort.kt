@@ -30,7 +30,6 @@ class InsertionSort : Sort {
 
         // using for and while loop
 
-
         for (i in 1 until randomArray.size) {
             val key = randomArray[i]
             var j = i -1
@@ -39,10 +38,7 @@ class InsertionSort : Sort {
                 j -= 1
             }
             randomArray[j+1] = key
-
         }
-
-
             return randomArray
         }
     }
